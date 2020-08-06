@@ -1,8 +1,9 @@
 const {Sequelize, DataTypes} = require('sequelize');
 //const { UPSERT } = require('sequelize/types/lib/query-types');
 
-//const sequelize = new Sequelize('postgres::memory')
-const sequelize = new Sequelize('postgres://postgres:RH23021312@ec2-54-212-132-145.us-west-2.compute.amazonaws.com:5432/sirhcobnomina')
+const db = require('../../db');
+
+const sequelize = db.sequelize;
 
 const t_rhnominas = sequelize.define('t_rhnominas', {
     quincenapago: {type: DataTypes.INTEGER, allowNull: false },

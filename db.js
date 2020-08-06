@@ -1,5 +1,5 @@
 const { Sequelize } = require('sequelize');
-const sequelize = new Sequelize('postgres://postgres:RH23021312@ec2-54-212-132-145.us-west-2.compute.amazonaws.com:5432/sirhcobnomina')
+const sequelize = new Sequelize('postgres://postgres:RH23021312@54.184.232.181:5432/sirhcobnomina')
 
 
 async function connect(){
