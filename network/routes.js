@@ -11,13 +11,14 @@ const autenticar = require('../components/usuarios/network')
 
 //const chat = require('../components/chat/network');
 const routes = function (server){
-    console.log('Buscando ruta')
+    console.log('Buscando ruta');
     server.use('/calendario',calendario);
     server.use('/avancemeses',avancemeses);
     server.use('/nominas',nominas);
     server.use('/horas',horas);
     server.use('/estudios',estudios);
     server.use('/autenticar',autenticar);
+    console.log('Termino buscando ruta');
     //server.use('/user',user);
     //server.use('/chat',chat);
 }
