@@ -38,7 +38,7 @@ async function listaUsuario(user, password) {
     console.log('......>')
     if (usuario[0].dataValues.u_numemp) {
         console.log('==> Genial');
-        const token = jwt.sign(payload, llave, { expiresIn: 1440 });
+        const token = jwt.sign(payload, llave, { expiresIn: "1 days" });
         usuario[0].dataValues.token = token
     }
     else {

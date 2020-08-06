@@ -1,10 +1,10 @@
 const {Sequelize, DataTypes} = require('sequelize');
-//const { UPSERT } = require('sequelize/types/lib/query-types');
 
 const db = require('../../db');
 
 const sequelize = db.sequelize;
 
+const sequelize =  db.sequelize; 
 const t_rhnominas = sequelize.define('t_rhnominas', {
     quincenapago: {type: DataTypes.INTEGER, allowNull: false },
     numemp: {type: DataTypes.STRING, allowNull: false },
@@ -47,6 +47,7 @@ const t_rhnominas = sequelize.define('t_rhnominas', {
     orden: {type: DataTypes.INTEGER, allowNull: false },
     verificado: {type: DataTypes.INTEGER, allowNull: false },
     observaciones: {type: DataTypes.STRING, allowNull: false },
+    compensacionpa: {type: DataTypes.DOUBLE, allowNull: false },
 },
 {
     freezeTableName: true,
